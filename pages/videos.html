@@ -27,84 +27,86 @@
   </head>
   <body class="font-montserrat">
     <div class="margin-top"></div>
-    <header id="header">
-      <!-- NAV -->
-      <nav
-        class="navbar navbar-dark fixed-top navbar-expand-md"
-        data-bs-theme="dark"
-      >
-        <div
-          class="container-fluid d-flex justify-content-between align-items-center"
+    <div id="grids-container">
+      <!-- Header -->
+      <header id="header">
+        <!-- NAV -->
+        <nav
+          class="navbar navbar-dark fixed-top navbar-expand-md"
+          data-bs-theme="dark"
         >
           <div
-            class="container-fluid d-flex align-items-center justify-content-start"
-          >
-            <a class="navbar-brand" href="../index.html">
-              <img
-                src="../assets/images/icon-white-3.png"
-                alt="logo-home-nav"
-                class="img-icon"
-              />
-            </a>
-          </div>
-          <div
-            class="container-button-navbar container-fluid d-flex justify-content-end align-items-center"
-          >
-            <button
-              class="style-button-navbar navbar-toggler align-items-center"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasDarkNavbar"
-              aria-controls="offcanvasDarkNavbar"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div
-            class="offcanvas offcanvas-end text-bg-dark"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
+            class="container-fluid d-flex justify-content-between align-items-center"
           >
             <div
-              class="offcanvas-header w-100 p-3 border border-1 shadow border-white border-opacity-10"
+              class="container-fluid d-flex align-items-center justify-content-start"
             >
-              <img
-                class="img-icon offcanvas-title fs-2 w-25"
-                src="../assets/images/logo-white-3.png"
-              />
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+              <a class="navbar-brand" href="../index.html">
+                <img
+                  src="../assets/images/icon-white-3.png"
+                  alt="logo-home-nav"
+                  class="img-icon"
+                />
+              </a>
             </div>
-            <div class="offcanvas-body w-100 p-3">
-              <ul class="navbar-nav fs-6">
-                <li>
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="./videos.html">Videos</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-                <li>
-                  <a class="nav-link" href="./sobre-mi.html">Sobre mi</a>
-                </li>
-              </ul>
+            <div
+              class="container-button-navbar container-fluid d-flex justify-content-end align-items-center"
+            >
+              <button
+                class="style-button-navbar navbar-toggler align-items-center"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div
+              class="offcanvas offcanvas-end text-bg-dark"
+              tabindex="-1"
+              id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel"
+            >
+              <div
+                class="offcanvas-header w-100 p-3 border border-1 shadow border-white border-opacity-10"
+              >
+                <img
+                  class="img-icon offcanvas-title fs-2 w-25"
+                  src="../assets/images/logo-white-3.png"
+                />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body w-100 p-3">
+                <ul class="navbar-nav fs-6">
+                  <li>
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="./videos.html">Videos</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="./sobre-mi.html">Sobre mi</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
-      <!-- <nav>
+        <!-- <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <div class="menu-separator"></div>
@@ -117,7 +119,9 @@
           <li><a href="./sobre-mi.html">Sobre mi</a></li>
         </ul>
       </nav> -->
-    </header>
+      </header>
+    </div>
+
     <main>
       <div class="title">
         <h1>Videos</h1>
@@ -139,8 +143,8 @@
 
       <!-- gallery -->
       <section class="gallery">
-        <article class="gallery-video">
-          <div class="card-video">
+        <article id="grilla-videos" class="gallery-video">
+          <div id="card-1" class="card-video">
             <img
               src="../assets/images/portada-trabajofino.jpg"
               alt="Videoclip-Trabajo-Fino"
@@ -151,7 +155,7 @@
               <button class="style-button-primary">Ver video</button>
             </div>
           </div>
-          <div class="card-video">
+          <div id="card-2" class="card-video">
             <img
               src="../assets/images/portada-caravana-nacional23.jpg"
               alt="caravana-del-colegio-nacional-2023"
@@ -162,18 +166,18 @@
               <button class="style-button-primary">Ver video</button>
             </div>
           </div>
-          <div class="card-video">
+          <div id="card-3" class="card-video">
             <img
               src="../assets/images/portada-eventos.jpg"
               alt="servicio-de-video-en-eventos"
               class="album-content"
             />
             <h2 class="album-title">Eventos</h2>
-            <div class="button bu">
+            <div class="button">
               <button class="style-button-primary">Ver video</button>
             </div>
           </div>
-          <div class="card-video">
+          <div id="card-4" class="card-video">
             <img
               src="../assets/images/portada-ffh.jpg"
               alt="Videoclip-FFH"
